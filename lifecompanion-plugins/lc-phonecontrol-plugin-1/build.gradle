@@ -21,13 +21,17 @@ dependencies {
     compileOnly "org.lifecompanion:lc-app:$lifecompanionAppVersion"
 }
 
+clean {
+    delete 'build'
+}
+
 jar {
     duplicatesStrategy DuplicatesStrategy.WARN
     manifest {
         attributes(
                 "LifeCompanion-Plugin-Class": "org.lifecompanion.plugin.phonecontrol.PhoneControlPlugin",
                 "LifeCompanion-Plugin-Package-Scanning-Base": "org.lifecompanion.plugin.phonecontrol",
-                "LifeCompanion-Plugin-Id": "lc-phonecontrol-plugin",
+                "LifeCompanion-Plugin-Id": "lc-phonecontrol-plugin-1",
                 "LifeCompanion-Plugin-Author": "Etudiants IUT Vannes",
                 "LifeCompanion-Plugin-Version": project.version,
                 "LifeCompanion-Plugin-Build-Date": new Date().getTime(),

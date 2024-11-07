@@ -4,7 +4,7 @@ plugins {
 }
 
 javafx {
-    version = '18'
+    version = '22'
     modules = ['javafx.controls', 'javafx.media']
     configuration = 'compileOnly'
 }
@@ -23,6 +23,10 @@ dependencies {
     // Note that you should check that the dependency is not already integrated in LifeCompanion core (if so, use "compileOnly" instead)
 }
 
+clean {
+    delete 'build'
+}
+
 // Enter your plugin meta data
 // When changing ID : think also about changing it everywhere in your code
 jar {
@@ -31,7 +35,7 @@ jar {
         attributes(
                 "LifeCompanion-Plugin-Class": "org.lifecompanion.plugin.phonecontrol.PhoneControlPlugin",
                 "LifeCompanion-Plugin-Package-Scanning-Base": "org.lifecompanion.plugin.phonecontrol",
-                "LifeCompanion-Plugin-Id": "lc-phonecontrol-plugin",
+                "LifeCompanion-Plugin-Id": "lc-phonecontrol-plugin-2",
                 "LifeCompanion-Plugin-Author": "LifeCompanion AAC",
                 "LifeCompanion-Plugin-Version": project.version,
                 "LifeCompanion-Plugin-Build-Date": new Date().getTime(),
