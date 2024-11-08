@@ -20,7 +20,7 @@ import java.util.function.Function;
  *         Le CHANU Simon, PAVOINE Oscar
  */
 public class PhoneControlPlugin implements PluginI {
-    public static final String PLUGIN_ID = "lc-phonecontrol-plugin";
+    public static final String PLUGIN_ID = "lc-phonecontrol-plugin-1";
 
     public PhoneControlPlugin() {
     }

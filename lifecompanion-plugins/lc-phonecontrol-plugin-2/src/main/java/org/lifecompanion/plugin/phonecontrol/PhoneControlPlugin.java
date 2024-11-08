@@ -20,7 +20,7 @@ import java.util.Map;
 import java.util.function.Function;
 
 public class PhoneControlPlugin implements PluginI {
-    public static final String ID = "lc-phonecontrol-plugin";
+    public static final String ID = "lc-phonecontrol-plugin-2";
 
     // RES
     //========================================================================
